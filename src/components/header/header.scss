@@ -1,0 +1,44 @@
+.campaign-header {
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background: linear-gradient(to right,#c01718 0,#c01718 15%,#e25507 31%,#ed7202 50%,#f8ad01 100%,#f8ad01 100%,#f8b101 100%);
+  background-size: cover;
+  background-position: center;
+  .intro-section {
+    height: 45vh;
+    width: 70vw;
+  }
+  .intro {
+    width: 55vw;
+    h2 {
+      line-height: 5rem;
+      margin-bottom: 2rem;
+    }
+  }
+  .ctas {
+    display:flex;
+    justify-content: flex-end;
+  }
+  button {
+    width: 20rem;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .campaign-header {
+    height:72vh;
+    justify-content: center;
+    .intro-section {
+      height: 45vh;
+      width: 70vw;
+      display:none;
+    }
+    .col {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,174 @@
+@import '../../common/sass/_variables.scss';
+
+/* General */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #EEEEEE;
+}
+
+input[type='text'] {
+    margin-bottom: 2rem;
+}
+
+input,
+select {
+    height: 2rem;
+    margin: 0 1rem;
+}
+
+button {
+    padding: 1rem 2rem;
+    margin: 1rem;
+}
+
+input,
+button,
+select {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+h2 {
+    font-size: 4rem;
+    text-transform: inherit;
+    font-family: "Opensans", Helvetica, Arial, sans-serif;
+}
+
+h3 {
+    font-size: 3rem;
+    text-transform: inherit;
+    font-family: "Opensans", Helvetica, Arial, sans-serif;
+    color: #4A4A4A;
+}
+
+h4 {
+    font-size: 2.4rem;
+    text-transform: capitalize;
+    font-family: "Opensans", Helvetica, Arial, sans-serif;
+}
+
+.light-grey {
+    color: #9B9B9B;
+}
+
+.bright-orange {
+    color: $origin-orange;
+}
+
+.btn-default {
+    font-size: initial;
+}
+
+.App {
+    font-size: large;
+    width: 100%;
+    margin: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.col-wrap {
+    display: flex;
+}
+
+.col {
+    width: 50%;
+}
+
+.col:first-child {
+    padding: 0 4rem 0 0;
+}
+
+.col:last-child {
+    padding: 0 0 0 4rem;
+}
+
+.view {
+    padding: 12rem 0;
+}
+
+.orange {
+    color: $origin-orange;
+}
+
+.help-block {
+    margin-left: 1rem;
+}
+
+.form-group {
+    margin: 1rem 0;
+}
+
+.icon-circle {
+    border: 2px solid $origin-orange;
+    color: #ffffff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2rem 0 0;
+    font-size: 2.3rem;
+}
+
+.checkmark {
+    margin-right: 1rem;
+    display: inline-block;
+    &:after {
+        content: '';
+        display: block;
+        width: 0.8rem;
+        height: 1.5rem;
+        border: solid $origin-orange;
+        border-width: 0 4px 4px 0;
+        border-radius: 2px;
+        transform: rotate(45deg);
+    }
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 480px) {
+    h2 {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    h4 {
+        font-size: 1.8rem;
+    }
+    .col-wrap {
+        flex-direction: column;
+    }
+    .col {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .col:first-child {
+        padding: 0;
+    }
+    .col:last-child {
+        padding: 0;
+    }
+    .col-one {
+        flex-direction: row;
+    }
+    .view {
+        padding: 3rem 0;
+    }
+    .container {
+        width: 100vw;
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+}

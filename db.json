@@ -1,0 +1,109 @@
+{
+  "request": {
+      "requestEmail": "..",
+      "requestType": "Residential",
+      "requestPhone": "...",
+      "received": "2017-10-11T11:00:56",
+      "requestFullName": ".",
+      "fileId": "5b3b91b0-d93e-440e-b420-ef79a25124c6"
+  },
+  "comparisonResults": [{
+    "comparisonResult": {
+      "totalSaving": "-71.79",
+      "Account": "Jane Doe",
+      "lineItems": [{
+        "Period1 Peak Rate": {
+          "Origin": "23.56",
+          "Competitor": "21.1",
+          "Difference": "2.46"
+        },
+        "Period1 Peak Charge": {
+          "Origin": "208.18",
+          "Competitor": "186.43",
+          "Difference": "21.75"
+        },
+        "GST": {
+          "Origin": "19.64028",
+          "Competitor": "25.397",
+          "Difference": "- 5.75672"
+        },
+        "Supply Days Charge": {
+          "Origin": "89.4",
+          "Competitor": "95.51",
+          "Difference": "-6.11"
+        },
+        "Discount": {
+          "Origin": "-101.1772",
+          "Competitor": "- 73.2072",
+          "Difference": "- 27.97"
+        },
+        "Period1 Supply Days Rate": {
+          "Origin": "102.76",
+          "Competitor": "109.77",
+          "Difference": "-7.01"
+        }
+      }],
+      "Difference Total": "- 71.79392",
+      "Type": "DOM - Single Rate",
+      "Competitor Total": "258.827",
+      "Excluded Other Charge": "0"
+    }},
+    {
+      "comparisonResult": {
+        "totalSaving": "-71.79",
+        "Account": "Jane Doe",
+        "lineItems": [{
+          "Period1 Peak Rate": {
+            "Origin": "23.56",
+            "Competitor": "21.1",
+            "Difference": "2.46"
+          },
+          "Period1 Peak Charge": {
+            "Origin": "208.18",
+            "Competitor": "186.43",
+            "Difference": "21.75"
+          },
+          "GST": {
+            "Origin": "19.64028",
+            "Competitor": "25.397",
+            "Difference": "- 5.75672"
+          },
+          "Supply Days Charge": {
+            "Origin": "89.4",
+            "Competitor": "95.51",
+            "Difference": "-6.11"
+          },
+          "Discount": {
+            "Origin": "-101.1772",
+            "Competitor": "- 73.2072",
+            "Difference": "- 27.97"
+          },
+          "Period1 Supply Days Rate": {
+            "Origin": "102.76",
+            "Competitor": "109.77",
+            "Difference": "-7.01"
+          }
+        }],
+        
+        "Difference Total": "- 71.79392",
+        "Type": "DOM - Single Rate",
+        "Competitor Total": "258.827",
+        "Excluded Other Charge": "0"
+      }
+      }],
+  "Balance Brought Forward (Excluded)": "0",
+  "Days": "87",
+  "Period1 Supply Days Units": "87",
+  "NMI": "6100000000",
+  "Period1 Peak Units": "883.612",
+  "Period1 Solar Units": "256.708",
+  "Address": "Supply address:",
+  "Concessions": "0",
+  "Peak %": "100",
+  "Average Daily Use (KWh)": "10.16",
+  "Total Usage": "883.612",
+  "Bill Period": "08 JUN 2016 to 02 SEP 2016",
+  "days": 32,
+  "fileUrl": "http://kg-04.serve2serve.com.au:8080/jdocorigin/mypscpdoc?dv=5b3b91b0-d93e-440e-b420-ef79a25124c6",
+  "status": "200"
+}

@@ -1,0 +1,44 @@
+
+@import '../../common/sass/_variables.scss';
+.steps {
+  color: $origin-orange;
+  display: flex;
+  >div {
+      display: flex;
+      line-height: 3.5rem;
+      padding: 0 4rem 0 0;
+      margin: 0 0 3rem 0;
+  }
+  .disabled {
+      color: lightgray;
+      svg {
+          .cloud {
+              fill: lightgray;
+          }
+          .arrow {
+             fill: lightgray;
+          }
+      }
+      .icon-circle {
+          border: 2px solid lightgray;
+          color: lightgray;
+      }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+    .steps {
+        font-size: 12px;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        >div {
+            padding:0;
+            margin:0;
+        }
+        .icon-circle {
+            margin-right: 0.5rem;
+            width: 30px;
+            height: 30px;
+        }
+    }
+}

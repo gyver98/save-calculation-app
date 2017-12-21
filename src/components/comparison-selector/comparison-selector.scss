@@ -1,0 +1,108 @@
+@import '../../common/sass/_variables.scss';
+@import '../../common/sass/anims.scss';
+.comparison-selector {
+    background-color: #2A2A2A;
+    display: flex;
+    color: white;
+    margin: 0;
+    p {
+        color: #ffffff;
+    }
+    .selection {
+        margin-top: 2rem;
+    }
+    .switch-choice {
+        opacity: 0;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        height: 15rem;
+        &:focus {
+            outline: none; // Come back to this for useablility
+        }
+        p,
+        h4 {
+            color: #afafaf;
+            margin-bottom: 1rem;
+        }
+        &.active p,
+        &.active h4 {
+            color: #ffffff;
+        }
+        h4 {
+            line-height: 10rem;
+        }
+        .icon-circle {
+            border-color: grey;
+            color: grey;
+        }
+    }
+    .steps {
+        opacity: 0;
+    }
+    .copy {
+        opacity: 0;
+    }
+    .active {
+        .icon-circle {
+            border-color: $origin-orange;
+            color: #ffffff;
+        }
+    }
+    .col:last-child {
+        padding: 4rem 0 0 4rem;
+    }
+    .anim {
+        .switch-choice {
+            animation: fadeUp 0.3s ease-in-out forwards;
+            animation-delay: 0.2s;
+        }
+        .steps {
+            animation: fadeUp 0.3s ease-in-out forwards;
+            animation-delay: 0.4s;
+        }
+        .copy {
+            animation: fadeIn 0.5s ease-in-out forwards;
+            animation-delay: 0.8s;
+        }
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+    .comparison-selector {
+        .col-wrap {
+            flex-direction: column;
+        }
+        .col {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .col:first-child {
+            padding: 0;
+        }
+        .col:last-child {
+            padding: 0;
+        }
+        .col-one {
+            flex-direction: row;
+        }
+        .steps {
+            flex-direction: column;
+        }
+        .selection {
+            margin-top: 0;
+        }
+        .switch-choice {
+            justify-content: flex-start;
+            text-align: center;
+            flex-direction: column;
+            width: 50%;
+            height: 10rem;
+            h4 {
+                line-height: inherit;
+            }
+        }
+    }
+}
